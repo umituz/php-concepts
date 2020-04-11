@@ -1,0 +1,16 @@
+RewriteEngine On
+
+#ErrorDocument 404 http://localhost/eticaret/404.php
+
+RewriteRule ^uyeler$ uyeler.php [NC,L]
+RewriteRule ^icerik$ icerik.php [NC,L]
+RewriteRule ^galeri$ galeri.php [NC,L]
+
+#RewriteRule ^anasayfa$ index.php [NC,L]
+#RewriteRule ^bize-ulasin$ iletisim.php [NC,L]
+#RewriteRule ^haberler$ haberler.php [NC,L]
+#RewriteRule ^sss$ sss.php [NC,L]
+
+#RewriteRule ^urun-([0-9a-zA-Z-_]+)-([0-9]+)$ urun-detay.php?sef=$1&urun_id=$2 [L,QSA]
+#RewriteRule ^sayfa-([0-9a-zA-Z-_]+)-([0-9]+)$ urunler.php?sef=$1&urun_id=$2 [L,QSA]
+

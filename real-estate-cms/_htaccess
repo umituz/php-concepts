@@ -1,0 +1,15 @@
+RewriteEngine On
+
+ErrorDocument 404 http://localhost/emlak/404.php
+
+RewriteRule ^anasayfa$ index.php [NC,L]
+RewriteRule ^hakkimizda$ hakkimizda.php [NC,L]
+RewriteRule ^bize-ulasin$ iletisim.php [NC,L]
+RewriteRule ^haberler$ haberler.php [NC,L]
+RewriteRule ^danisman$ danisman.php [NC,L]
+RewriteRule ^emlak$ emlak.php [NC,L]
+
+RewriteRule ^haber-([0-9a-zA-Z-_]+)-([0-9]+)$ haber-detay.php?sef=$1&icerik_id=$2 [L,QSA]
+RewriteRule ^sayfa-([0-9a-zA-Z-_]+)-([0-9]+)$ menu-detay.php?sef=$1&menu_id=$2 [L,QSA]
+RewriteRule ^emlak-([0-9a-zA-Z-_]+)-([0-9]+)$ emlak-detay.php?sef=$1&emlak_id=$2 [L,QSA]
+RewriteRule ^danisman-([0-9a-zA-Z-_]+)-([0-9]+)$ danisman-detay.php?sef=$1&yonetmen_id=$2 [L,QSA]
