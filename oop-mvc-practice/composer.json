@@ -1,0 +1,24 @@
+{
+    "name": "umituz/php-oop",
+    "type": "project",
+    "description": "Php ile nesne tabanlı programlama alıştırmaları.",
+    "keywords": [
+        "php",
+        "oop"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ümit UZ",
+            "email": "umituz998@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
