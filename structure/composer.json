@@ -1,0 +1,29 @@
+{
+    "name": "umituz/php-structure",
+    "type": "project",
+    "description": "Created for many projects just one structure",
+    "keywords": [
+        "php-structure"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ümit UZ",
+            "email": "umituz998@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/config": "^5.8",
+        "tightenco/collect": "^5.8"
+    },
+    "autoload": {
+        "files":[
+            "app/Helpers/Helper.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
