@@ -1,0 +1,10 @@
+php_value auto_prepend_file "/opt/lampp/htdocs/php-structure/vendor/autoload.php"
+RewriteEngine On
+
+ErrorDocument 404 http://localhost/php-structure/sayfa-bulunamadi
+
+RewriteRule ^anasayfa$ resources/views/pages/index.php [NC,L]
+RewriteRule ^hakkimizda$ resources/views/pages/about.php [NC,L]
+RewriteRule ^bize-ulasin$ resources/views/pages/contact.php [NC,L]
+RewriteRule ^iletisim$ resources/views/pages/contact.php [NC,L]
+RewriteRule ^sayfa-bulunamadi$ resources/views/errors/404.php [NC,L]
