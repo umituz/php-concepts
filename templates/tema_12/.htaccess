@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^anasayfa$ index.php [NC,L]
+RewriteRule ^biz-kimiz$ biz-kimiz.php [NC,L]
+RewriteRule ^iletisim$ iletisim.php [NC,L]
+RewriteRule ^blog$ blog.php [NC,L]
+ 
+RewriteRule ^haberler-([0-9a-zA-Z-_]+)-([0-9]+)$ detay.php?self=$1&icerik_id=$2 [L,QSA]
+
